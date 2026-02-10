@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const Header = () => {
+const Navigation = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     function handleScroll() {
@@ -26,8 +26,8 @@ const Header = () => {
     }, []);
 
     return(
-        <div className="header-container fixed top-0 left-0">
-            <div className="header flex w-screen justify-between items-center p-4 bg-white shadow-md">
+        <div className="header-container fixed top-0 left-0 z-50">
+            <div className="header flex w-screen justify-between items-center p-4 bg-white shadow-md px-[5%]">
                 <img src="vite.svg" alt="Personal Logo" className="mr-auto"/>
                 <a onClick={handleClick} href="#hero" className="ml-5">Home</a>
                 <a onClick={handleClick} href="#about" className="ml-5">About</a>
@@ -37,7 +37,7 @@ const Header = () => {
             </div>
             <div className="progress-container w-screen h-1 bg-[#f3f3f3]" >
                 <div
-                    className="progress-bar h-1 bg-gradient-to-r from-orange-500 to-yellow-500"
+                    className="progress-bar h-1 bg-gradient-to-r from-blue-500 to-purple-500"
                     style={{ width: `${scrollPosition}%` }}
                 />
             </div>
@@ -45,4 +45,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Navigation;

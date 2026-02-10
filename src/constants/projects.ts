@@ -17,10 +17,10 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        name: 'Project Three',
-        technologies: ['Node.js', 'Express', 'MongoDB'],
-        description: 'A brief description of Project Three.',
-        link: '#',
+        name: 'Big Two Card Game',
+        technologies: ['Java', 'JavaGUI'],
+        description: 'A interactive Big Two card game built using Java and JavaGUI. The game features a user-friendly interface, allowing players to enjoy the classic card game with friends.',
+        link: 'https://github.com/wskas/OOP-BigTwo',
     },
 
 ];

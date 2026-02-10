@@ -20,7 +20,7 @@ const ProjectCard = (project : Project) => {
                 </button>
             </div> */}
 
-            <div className="project-card border rounded-md border-gray-400">
+            <div className="project-card border rounded-md border-gray-400 bg-white-300/30 backdrop-blur-sm p-6 shadow-lg">
                 <div className="project-content">
                     <h3 className="project-title">{project.name}</h3>
                     <p className="project-description max-w-md">{project.description}</p>

@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
   min-height: 100vh;
   display:flex;
   flex-direction: column;
@@ -80,7 +79,7 @@
   opacity: 0.4;
   filter: invert(1);
 }
-
+/* 
 .gradient {
   height: fit-content;
   z-index: 3;
@@ -103,6 +102,6 @@
   height:100vh;
   filter: blur(100px) saturate(150%);
   opacity: 0.15;
-}
+} */
 
 

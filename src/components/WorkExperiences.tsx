@@ -4,7 +4,7 @@ const WorkExperiences = () => {
             <div className="container px-4">
                 <h2 className="text-3xl font-bold mb-8">Work Experiences</h2>
                 <div className="space-y-8">
-                    <div>
+                    <div className="text-left">
                         <h3 className="text-xl font-semibold">eBRAM International Online Dispute Resolution Centre Limited</h3>
                         <p className="text-gray-600">Hong Kong SAR, China</p>
                         <p className="text-gray-600">Jun 2024 - Sept 2024</p>
@@ -20,7 +20,7 @@ const WorkExperiences = () => {
                             and reducing training time by 30%</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="text-left">
                         <h3 className="text-xl font-semibold">Barkmall HK</h3>
                         <p className="text-gray-600">Hong Kong SAR, China</p>
                         <p className="text-gray-600">Jun 2023 - Sept 2023</p>
@@ -31,6 +31,7 @@ const WorkExperiences = () => {
                             experience, enhancing user engagement.</li>
                         </ul>
                     </div>
+                    <div className="absolute md:left-8 left-8 top-0 w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"><div className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-primary via-accent to-transparent from-[0%] via-[10%] rounded-full"></div></div>
                 </div>
             </div>
         </section>
