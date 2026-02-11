@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { MouseEvent } from 'react';
 
 const Navigation = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -10,12 +11,15 @@ const Navigation = () => {
         setScrollPosition(scrolled);
     }
 
-    function handleClick(e) {
+    function handleClick(e: MouseEvent<HTMLAnchorElement>) {
         e.preventDefault();
-        const targetId = e.currentTarget.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" });
+        const href = e.currentTarget.getAttribute("href");
+        if (href) {
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
         }
     }
 
