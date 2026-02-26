@@ -47,9 +47,9 @@ const About = () => {
                                 <ul className="col-span-1 md:col-span-3 flex flex-wrap gap-4 text-sm sm:text-lg text-gray-700">
                                     <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="docker" className="w-6"/>Docker</li>
                                     <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="github" className="w-6"/>GitHub</li>
-                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="git" className="w-6"/>Git</li>
-                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="octopusdeploy" className="w-6"/>Octopus Deploy</li>
-                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="teamcity" className="w-6"/>TeamCity</li>
+                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><StackIcon name="git" className="w-6" />Git</li>
+                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><img src="octopusdeploy.svg" className="w-6"/>Octopus Deploy</li>
+                                    <li className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-border hover:scale-110 transition-transform duration-300"><img src="teamcity.svg" className="w-6"/>TeamCity</li>
                                 </ul>
                             </section>
                         </div>

@@ -12,6 +12,19 @@ const Projects = () => {
                     <ProjectCard key={projects.id} {...projects} />
                 ))}
             </div>
+            <div className="mt-10">
+                <a 
+                    href="https://github.com/wskas" 
+                    className="group inline-flex items-center"
+                >
+                    More Projects
+                    <span 
+                        className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200"
+                    >
+                        →
+                    </span>
+                </a>
+            </div>
         </section>
     );
 }
