@@ -57,7 +57,7 @@ const Navigation = () => {
                     <a onClick={handleClick} href="#about" className="ml-5 py-2 md:py-0">About</a>
                     <a onClick={handleClick} href="#projects" className="ml-5 py-2 md:py-0">Projects</a>
                     <a onClick={handleClick} href="#workexperiences" className="ml-5 py-2 md:py-0">Experience</a>
-                    <a onClick={handleClick} href="#contactme" className="ml-5 py-2 md:py-0">Contact</a>
+                    {/* <a onClick={handleClick} href="#contactme" className="ml-5 py-2 md:py-0">Contact</a> */}
                 </div>
             </div>
             <div className="progress-container w-screen h-1 bg-[#f3f3f3]" >
