@@ -1,7 +1,7 @@
 const WorkExperiences = () => {
     return (
         <section id="workexperiences" className="py-15 md:py-25 md:-mx-[5%] bg-gray-100/30 backdrop-blur-sm">
-            <div className="container px-4">
+            <div className="container px-4 mx-auto">
                 <h2 className="text-3xl font-bold mb-8">Work Experiences</h2>
                 <div className="space-y-8">
                     <div className="text-left">

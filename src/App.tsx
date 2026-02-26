@@ -23,8 +23,8 @@ function App() {
       </div>
       <div className='main relative'>
           {/* <div className='gradient' /> */}
-          <Navigation />
           <div className="content md:px-[5%]">
+          <Navigation />
             <Hero />
             <About />
             <Projects />
