@@ -5,8 +5,8 @@ import StackIcon from "tech-stack-icons";
 const About = () => {
     return (
         <>
-            <section id="about" className="py-15 md:py-25 md:-mx-[5%] bg-gray-100/30 backdrop-blur-sm load">
-                <div className="container mx-auto px-4 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <section id="about" className="py-10 px-4 md:py-25 md:-mx-[5%] bg-gray-100/30 backdrop-blur-sm load">
+                <div className="container mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2">
                     <div className="aboutme text-left md:pr-8">
                         <h2 className="section-title font-bold text-3xl mb-8">About Me</h2>
                         <p className="about-text text-gray-700 leading-relaxed mb-8">

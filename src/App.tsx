@@ -1,7 +1,7 @@
 import Hero from './components/Hero';
-import ContactMe from './components/ContactMe';
+// import ContactMe from './components/ContactMe';
 import Projects from './components/Projects';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import WorkExperiences from './components/WorkExperiences';
@@ -22,7 +22,6 @@ function App() {
         </div>
       </div>
       <div className='main relative'>
-          {/* <div className='gradient' /> */}
           <div className="content md:px-[5%]">
           <Navigation />
             <Hero />

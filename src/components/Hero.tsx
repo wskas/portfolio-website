@@ -47,9 +47,9 @@ const Hero = () => {
                 {/* <p className="text-2xl bg-gradient-to-r from-blue-800 to-purple-400 bg-clip-text text-transparent">Aspiring Full Stack Software Engineer</p> */}
                 <p className="text-lg text-gray-600">Showcasing my projects and skills</p>
                 <div className='flex items-center gap-2 mt-4'>
-                    <a  onClick={handleClick} href="#projects" className="hero-button border border-gray-500 text-gray-500 px-3 py-1 rounded-full mt-2 inline-block hover:border-gradient-to-r hover:from-blue-800 hover:to-purple-400 transition-colors duration-300">
+                    {/* <a  onClick={handleClick} href="#projects" className="hero-button border border-gray-500 text-gray-500 px-3 py-1 rounded-full mt-2 inline-block hover:border-gradient-to-r hover:from-blue-800 hover:to-purple-400 transition-colors duration-300">
                         View Projects
-                    </a>
+                    </a> */}
                     <a href='https://github.com/wskas' target="_blank" rel="noopener noreferrer"><img className='w-8' src='github-icon.svg'/></a>
                     <a href='https://www.linkedin.com/in/winson-sutanto-kasman/' target="_blank" rel="noopener noreferrer"><img className='w-8' src='linkedin-icon.svg'/></a>
                     <a href='mailto:winsonsutantokasman@gmail.com' target="_blank" rel="noopener noreferrer"><img className='w-8' src='mailto.svg'/></a>
