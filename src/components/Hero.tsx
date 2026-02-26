@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const setScrollPosition = useState(0)[1];
 
     function handleScroll() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -11,14 +11,14 @@ const Hero = () => {
         setScrollPosition(scrolled);
     }
 
-    function handleClick(e) {
-        e.preventDefault();
-        const targetId = e.currentTarget.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" });
-        }
-    }
+    // function handleClick(e) {
+    //     e.preventDefault();
+    //     const targetId = e.currentTarget.getAttribute("href").substring(1);
+    //     const targetElement = document.getElementById(targetId);
+    //     if (targetElement) {
+    //         targetElement.scrollIntoView({ behavior: "smooth" });
+    //     }
+    // }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
