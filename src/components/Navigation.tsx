@@ -36,32 +36,37 @@ const Navigation = () => {
     }, []);
 
     return(
-        <div className="header-container fixed top-0 left-0 z-50">
-            <div className="header flex w-screen justify-between items-center p-4 bg-white shadow-md px-[5%]">
+        <div className="header-container fixed top-0 left-0 z-50 w-screen">
+            <div className="header flex w-full justify-between items-center p-4 bg-white shadow-md px-[5%]">
                 <img src="personalLogo.png" alt="Personal Logo" className="mr-auto w-8 h-8"/>
-                <button 
-                    className="hamburger-menu block md:hidden ml-5" 
+                {/* Desktop nav */}
+                <div className="hidden md:flex items-center">
+                    <a onClick={handleClick} href="#hero" className="ml-5">Home</a>
+                    <a onClick={handleClick} href="#about" className="ml-5">About</a>
+                    <a onClick={handleClick} href="#projects" className="ml-5">Projects</a>
+                    <a onClick={handleClick} href="#workexperiences" className="ml-5">Experience</a>
+                </div>
+                {/* Mobile hamburger button */}
+                <button
+                    className="md:hidden ml-5 flex flex-col justify-center items-center w-6 h-6 gap-1"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Toggle menu"
                 >
-                    {isMenuOpen ? (
-                        <img src='close.png' alt="Close Menu" className="w-6 h-6"/>
-                    ) : (
-                        <>
-                            <span className="block w-6 h-0.5 bg-black mb-1"></span>
-                            <span className="block w-6 h-0.5 bg-black mb-1"></span>
-                            <span className="block w-6 h-0.5 bg-black"></span>
-                        </>
-                    )}
+                    <span className={`block w-6 h-0.5 bg-black transition-all duration-300 origin-center ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                    <span className={`block w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? 'opacity-0 scale-x-0' : ''}`}></span>
+                    <span className={`block w-6 h-0.5 bg-black transition-all duration-300 origin-center ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
                 </button>
-                <div className={`nav-links md:flex flex-col md:flex-row ${isMenuOpen ? 'block w-full' : 'hidden'} md:block bg-white md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto shadow-md md:shadow-none`}>
-                    <a onClick={handleMenuItemClick} href="#hero" className="ml-5 py-2 md:py-0">Home</a>
-                    <a onClick={handleMenuItemClick} href="#about" className="ml-5 py-2 md:py-0">About</a>
-                    <a onClick={handleMenuItemClick} href="#projects" className="ml-5 py-2 md:py-0">Projects</a>
-                    <a onClick={handleMenuItemClick} href="#workexperiences" className="ml-5 py-2 md:py-0">Experience</a>
-                    {/* <a onClick={handleMenuItemClick} href="#contactme" className="ml-5 py-2 md:py-0">Contact</a> */}
+            </div>
+            {/* Mobile dropdown menu */}
+            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white shadow-md ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="flex flex-col px-[5%] py-2">
+                    <a onClick={handleMenuItemClick} href="#hero" className="py-3 border-b border-gray-100">Home</a>
+                    <a onClick={handleMenuItemClick} href="#about" className="py-3 border-b border-gray-100">About</a>
+                    <a onClick={handleMenuItemClick} href="#projects" className="py-3 border-b border-gray-100">Projects</a>
+                    <a onClick={handleMenuItemClick} href="#workexperiences" className="py-3">Experience</a>
                 </div>
             </div>
-            <div className="progress-container w-screen h-1 bg-[#f3f3f3]" >
+            <div className="progress-container w-full h-1 bg-[#f3f3f3]" >
                 <div
                     className="progress-bar h-1 bg-gradient-to-r from-blue-500 to-purple-500"
                     style={{ width: `${scrollPosition}%` }}
